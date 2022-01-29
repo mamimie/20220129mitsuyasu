@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COACHTECHからの挑戦状</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+<h1>お問い合わせ</h1>
+  <form class="form" name="contact" method="POST">
+  <div class="form-item">
+    <p class="foam-item-label">
+      お名前<span>※</span>
+    </p>
+    <input type="text" name="name" class="form-item-input" placeholder="例）山田  例）太郎">
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      性別<span>※</span>
+    </p>
+    <input type="circle" name="name" class="circle">
+    <a>男性</a><a>女性</a>
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      メールアドレス<span>※</span>
+    </p>
+    <input type="email" name="email" class="form-item-input" placeholder="例）test@example.com">
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      郵便番号<span>※</span>
+    </p>
+    〒<input type="number" name="number" class="form-item-input" placeholder="例）123-4567">
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      住所<span>※</span>
+    </p>
+    <input type="address" name="address" class="form-item-input" placeholder="例）東京都渋谷区千駄ヶ谷1-2-3">
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      建物名
+    </p>
+    <input type="name" name="name" class="form-item-input" placeholder="例）千駄ヶ谷マンション1-2-3">
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      <span>※</span>
+    </p>
+    <input type="text" name="name" class="form-item-input" placeholder="例）山田  例）太郎">
+  </div>
+  <div class="form-item">
+    <p class="foam-item-label">
+      ご意見<span>※</span>
+    </p>
+    <textarea name="textarea" class="form-item-textarea"></textarea>
+  </div>
+  <input type="submit" class="form-btn" value="確認">
+</form>
+
+<div class="float">
+    <p>バリエーションにはLaravelに既存で用意されているvalidationを利用し<br>ましょう。</p>
+</div>
+
+<div class="float">
+    <p>確認を押す前に入力した段階でエラーを出すようにしてください。</p>
+</div>
+
+<div class="float">
+    <p><span>※</span>は必須項目です。<br>入力がない場合は確認ボタンを押してもエラーメッセージを出すようにしてください。<br>エラーメッセージは各項目の下に表示してください。</p>
+</div>
+
+<div class="float">
+    <p>性別は男性をデフォルトでチェックしてください。</p>
+</div>
+
+<div class="float">
+    <p>メールアドレスはメールアドレスの形式でないとエラーメッセージを出<br>すようにしてください。</p>
+</div>
+
+<div class="float">
+    <p>郵便番号はハイフンありの半角で、8文字以外の場合はエラーメッセージ<br>を出すようにしてください。<br>全角の場合は自動で半角に変更してください。
+    郵便番号で検索した結果が住所の項目に自動で反映されるようにしてくだ<br>さい。</p>
+</div>
+
+<div class="float">
+    <p>ご意見は入力文字数が120文字以内になるように制限してください。</p>
+</div>
+
+<div class="float">
+    <p>確認ボタンを押すと内容確認ページに推移します</p>
+</div>
+
+<h1>内容確認</h1>
+
+
+</body>
+
+</html>
