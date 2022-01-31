@@ -2,7 +2,7 @@ h1 {
     text-align: center;
 }
 
-p span {
+span {
     color: red;
 }
 
@@ -17,4 +17,15 @@ p span {
     width: 60px;
 }
 
- {}
+.textarea {
+    height: 60px;
+    width: 40px;
+}
+
+.float {
+    text-align: right;
+}
+
+p {
+    text-align: right;
+}
